@@ -12,7 +12,7 @@ body {
 #header {
     height: 100vh;
     width: 100vw;
-    background: url(images/hero1.png) no-repeat center center /cover;
+    background: url(images/hero.jpg) no-repeat center center /cover;
 }
 
 /* navbar */
@@ -37,7 +37,7 @@ body {
 #header menu li a, #sticky-nav menu li {
     color: #fefeff;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 20px;
     text-align: left;
@@ -82,7 +82,7 @@ body {
 
 .banner {
     position: absolute;
-    top: 30%;
+    top: 25%;
     text-align: center;
     height: 14.3rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -93,13 +93,13 @@ body {
 
 .banner-first {
     letter-spacing: 1px;
-    color: #4d4d4d;
+    color: #986f3c;
     animation-name: anim;
     animation-duration: 2s;
 }
 
 .banner-second {
-    color: #414f6b;
+    color: #9f9f9f;
     letter-spacing: 6px;
     animation-name: anim;
     animation-duration: 2s;
@@ -145,7 +145,7 @@ body {
 #sticky-nav a {
     color: #414f6b;
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 20px;
 }
@@ -159,13 +159,13 @@ body {
 #history {
     height: 100vh;
     width: 100vw;
-    background: url(images/img2.png) no-repeat center center /cover;
+    background: url(images/img2.jpg) no-repeat center center /cover;
 }
 
 .history-heading {
     color: #414f6b;
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
@@ -255,9 +255,13 @@ body {
     }
 }
 
-/* team */
+/* tour */
 
-.team-introduction {
+#tours {
+    margin-top: 5rem;
+}
+
+.tour-introduction {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -265,20 +269,20 @@ body {
     padding: 2rem;
 }
 
-.team-heading {
+.tour-heading {
     color: #414f6b;
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 800;
     width: 20rem;
 }
 
-.team-heading span {
+.tour-heading span {
     font-size: 8rem;
     opacity: 0.5;
 }
 
-#team p {
+#tour p {
     color: #000000;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -288,22 +292,26 @@ body {
     padding-right: 2rem;
 }
 
-.team-main {
+.tour-main {
     height: 37.5rem;
     width: 100vw;
     padding: 0;
 }
 
-.team-slide-1 {
-    background: url(images/img3.png) no-repeat center center /cover;
+.tour-slide-1 {
+    background: url(images/img3.jpg) no-repeat center center /cover;
 }
 
-.team-slide-2 {
-    background: url(images/img4.png) no-repeat center center /cover;
+.tour-slide-2 {
+    background: url(images/img4.jpg) no-repeat center center /cover;
     display: none;
 }
 
-#header-team {
+.tour-slide-3 {
+    background: url(images/img5.jpg) no-repeat center center /cover;
+    display: none;
+}
+#header-tour {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -312,25 +320,25 @@ body {
     width: 100%;
 }
 
-#header-team menu {
+#header-tour menu {
     display: flex;
     justify-content: start;
     gap: 1rem;
     margin-left: 5rem;
 }
 
-#header-team li {
+#header-tour li {
     list-style: none;
 }
 
-.team-header-item {
+.tour-header-item {
     color: #b0b4be;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
 
-.team-header-item:hover {
+.tour-header-item:hover {
     color: rgb(65, 79, 107);
     background-color: #b0b4be;
     padding: 3px 10px;
@@ -369,15 +377,18 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    #team {
-        margin-top: 3rem;
-    }
 
-    .team-introduction {
+    .tour-introduction {
         flex-direction: row;
+        align-items: center;
     }
 
-    #header-team menu {
+    .tour-introduction p {
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    #header-tour menu {
         margin-left: 10rem;
     }
 }
@@ -393,7 +404,7 @@ footer nav {
 }
 
 footer p {
-    color: rgba(99, 118, 157, 1);
+    color: rgb(174, 186, 206);
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 800;
